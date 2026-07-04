@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- About Page SEO Meta Tags -->
+    <title>About — Mackrine Ruth</title>
+    <meta name="description"
+        content="Learn about Mackrine Ruth's journey from B.Sc. Computer Science to Frontend Developer Intern at TYM Agency.">
+    <meta name="keywords"
+        content="about Mackrine Ruth, frontend developer Thanjavur, web developer biography, UI designer Tamil Nadu">
+    <meta name="author" content="Mackrine Ruth">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mackrineruth.dev/about.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mackrineruth.dev/about.html">
+    <meta property="og:title" content="Meet Your Web Developer — Mackrine Ruth">
+    <meta property="og:description"
+        content="I don't just write code. I solve business problems through thoughtful design and clean development. Here's my story — and why it matters to your project.">
+    <meta property="og:image" content="assets/images/mackrine.png">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mackrineruth.dev/about.html">
+    <meta property="twitter:title" content="Meet Your Web Developer — Mackrine Ruth">
+    <meta property="twitter:description"
+        content="I don't just write code. I solve business problems through thoughtful design and clean development. Here's my story — and why it matters to your project.">
+    <meta property="twitter:image" content="assets/images/mackrine.png">
+
+    <!-- Preconnect to Google Fonts for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Skip to main content link -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- 
+      ========================================
+      GLOBAL HEADER / NAVIGATION (Reused)
+      ========================================
+    -->
+    <header class="site-header" role="banner">
+        <div class="container nav-container">
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+                <a href="index.html" class="nav-brand" aria-label="Mackrine Ruth - Home">
+                    Mackrine Ruth
+                </a>
+
+                <ul class="nav-menu" role="menubar">
+                    <li role="none">
+                        <a href="index.html" class="nav-link" role="menuitem">Home</a>
+                    </li>
+                    <li role="none">
+                        <a href="about.html" class="nav-link active" aria-current="page" role="menuitem">About</a>
+                    </li>
+                    <li role="none">
+                        <a href="work.html" class="nav-link" role="menuitem">Work</a>
+                    </li>
+                    <li role="none">
+                        <a href="skills.html" class="nav-link" role="menuitem">Skills</a>
+                    </li>
+                    <li role="none">
+                        <a href="contact.html" class="nav-link" role="menuitem">Contact</a>
+                    </li>
+                </ul>
+
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+                    aria-controls="mobile-drawer" type="button">
+                    <span class="hamburger-bar" aria-hidden="true"></span>
+                    <span class="hamburger-bar" aria-hidden="true"></span>
+                    <span class="hamburger-bar" aria-hidden="true"></span>
+                </button>
+            </nav>
+        </div>
+
+        <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-label="Mobile navigation" aria-modal="true"
+            aria-hidden="true">
+            <div class="drawer-overlay" aria-hidden="true"></div>
+            <div class="drawer-content">
+                <div class="drawer-header">
+                    <span class="drawer-brand">Mackrine Ruth</span>
+                    <button class="drawer-close" aria-label="Close navigation menu" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <ul class="drawer-menu" role="menu">
+                    <li role="none">
+                        <a href="index.html" class="drawer-link" role="menuitem">Home</a>
+                    </li>
+                    <li role="none">
+                        <a href="about.html" class="drawer-link active" aria-current="page" role="menuitem">About</a>
+                    </li>
+                    <li role="none">
+                        <a href="work.html" class="drawer-link" role="menuitem">Work</a>
+                    </li>
+                    <li role="none">
+                        <a href="skills.html" class="drawer-link" role="menuitem">Skills</a>
+                    </li>
+                    <li role="none">
+                        <a href="contact.html" class="drawer-link" role="menuitem">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="drawer-footer">
+                    <p class="drawer-contact">
+                        <a href="mailto:yovanmackrineruth@gmail.com">yovanmackrineruth@gmail.com</a>
+                    </p>
+                    <p class="drawer-contact">
+                        <a href="tel:+916381649243">+91 63816 49243</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main">
+
+        <!-- 
+          ========================================
+          ABOUT PAGE HERO (Section 3.2)
+          ========================================
+          - Background: var(--color-bg) #F8FAFC
+          - Layout: Centered, generous padding
+          - Breadcrumb: Home → About
+        -->
+        <section class="page-hero about-hero" aria-labelledby="about-hero-heading">
+            <div class="container">
+
+                <nav class="breadcrumb" aria-label="Breadcrumb">
+                    <ol class="breadcrumb-list">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item" aria-current="page">
+                            <span>About</span>
+                        </li>
+                    </ol>
+                </nav>
+
+                <h1 id="about-hero-heading" class="page-hero-title">
+                    Nice to Meet You.<br>
+                    <span class="text-gradient">I'm Mackrine Ruth.</span>
+                </h1>
+
+                <p class="page-hero-subtitle">
+                    A Frontend Developer and UI Designer who believes your website should be your hardest-working
+                    employee.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- 
+          ========================================
+          STORY SECTION (Section 3.3)
+          ========================================
+          - Layout: Two-column (50/50), stacks on mobile
+          - Left: Profile photo with gradient border and decorative shapes
+          - Right: 5-paragraph bio narrative
+        -->
+        <section id="story" class="story-section" aria-labelledby="story-heading">
+            <div class="container">
+                <div class="story-grid">
+
+                    <!-- Left: Profile Image -->
+                    <div class="story-image-wrapper">
+                        <div class="story-image-container">
+                            <div class="deco-shape deco-1" aria-hidden="true"></div>
+                            <div class="deco-shape deco-2" aria-hidden="true"></div>
+                            <div class="profile-frame profile-frame--story">
+                                <img src="assets/images/mackrine.png" alt="Mackrine Ruth professional portrait"
+                                    class="profile-image" width="400" height="400" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Bio Narrative -->
+                    <div class="story-content">
+                        <h2 id="story-heading" class="section-title section-title--left">I Started Because I Saw a
+                            Problem</h2>
+
+                        <div class="story-body">
+                            <p>
+                                Growing up in <strong>Mathur, Thanjavur</strong>, I watched local businesses struggle
+                                with their online presence. Beautiful stores. Excellent services. Loyal customers. But
+                                their websites? Slow. Outdated. Impossible to use on phones. Invisible on Google.
+                            </p>
+
+                            <p>
+                                These businesses were losing customers — not because they weren't great at what they
+                                did, but because their websites were failing them.
+                            </p>
+
+                            <p>
+                                That's why I became a web developer. Not to write code for the sake of it, but to help
+                                businesses like yours succeed online.
+                            </p>
+
+                            <p>
+                                After completing my <strong>B.Sc. Computer Science at Bishop Heber College,
+                                    Trichy</strong>, I didn't stop at graduation. I spent eight months in intensive
+                                certification courses — including Java certification — because I knew that theoretical
+                                knowledge wasn't enough. I needed real, practical skills to solve real business
+                                problems.
+                            </p>
+
+                            <p>
+                                In <strong>March 2026</strong>, I joined <strong>TYM Agency</strong> as a Web
+                                Development Intern. Since then, I've worked with real clients — boutiques, artists,
+                                event planners, jewellers, hardware stores — and learned that every business has unique
+                                challenges. The one thing they share? They all need a website that actually works for
+                                them.
+                            </p>
+                        </div>
+
+                        <!-- Quick Facts -->
+                        <dl class="quick-facts">
+                            <div class="fact-item">
+                                <dt class="fact-icon" aria-hidden="true">📍</dt>
+                                <dd><strong>Based in:</strong> Mathur, Thanjavur, Tamil Nadu</dd>
+                            </div>
+                            <div class="fact-item">
+                                <dt class="fact-icon" aria-hidden="true">🎓</dt>
+                                <dd><strong>Education:</strong> B.Sc. Computer Science, Bishop Heber College</dd>
+                            </div>
+                            <div class="fact-item">
+                                <dt class="fact-icon" aria-hidden="true">📜</dt>
+                                <dd><strong>Certified:</strong> Java + Professional Web Development Courses</dd>
+                            </div>
+                            <div class="fact-item">
+                                <dt class="fact-icon" aria-hidden="true">💼</dt>
+                                <dd><strong>Experience:</strong> Frontend Developer Intern, TYM Agency (since March
+                                    2026)</dd>
+                            </div>
+                            <div class="fact-item">
+                                <dt class="fact-icon" aria-hidden="true">🚀</dt>
+                                <dd><strong>Currently:</strong> Building real client websites and learning React/Next.js
+                                </dd>
+                            </div>
+                            <div class="fact-item">
+                                <dt class="fact-icon" aria-hidden="true">🌱</dt>
+                                <dd><strong>Fun fact:</strong> I'm also a mehendi artist and gardener</dd>
+                            </div>
+                        </dl>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          ========================================
+          PHILOSOPHY / VALUES SECTION
+          ========================================
+          - Background: var(--color-dark) #0F172A
+          - 5 belief statements with arrow markers
+        -->
+        <section id="philosophy" class="philosophy-section" aria-labelledby="philosophy-heading">
+            <div class="container">
+                <h2 id="philosophy-heading" class="section-title section-title--light">Here's What I Believe</h2>
+
+                <div class="philosophy-content">
+                    <ul class="philosophy-list" role="list">
+                        <li class="philosophy-item">
+                            <span class="philosophy-arrow" aria-hidden="true">→</span>
+                            <p><strong>Your website is a business tool first, a design piece second.</strong> It should
+                                generate leads, build credibility, and sell your services.</p>
+                        </li>
+                        <li class="philosophy-item">
+                            <span class="philosophy-arrow" aria-hidden="true">→</span>
+                            <p><strong>Fast is better than fancy.</strong> A simple, fast-loading site beats a complex,
+                                slow one every time. Your customers won't wait.</p>
+                        </li>
+                        <li class="philosophy-item">
+                            <span class="philosophy-arrow" aria-hidden="true">→</span>
+                            <p><strong>Mobile isn't optional.</strong> Over 60% of your traffic is mobile. If your site
+                                isn't designed for phones, you're losing customers.</p>
+                        </li>
+                        <li class="philosophy-item">
+                            <span class="philosophy-arrow" aria-hidden="true">→</span>
+                            <p><strong>You shouldn't need a developer for every small change.</strong> I build sites
+                                that are easy to maintain — because your time is valuable.</p>
+                        </li>
+                        <li class="philosophy-item">
+                            <span class="philosophy-arrow" aria-hidden="true">→</span>
+                            <p><strong>Clear communication beats technical jargon.</strong> I'll explain what I'm
+                                building and why, in plain language. No mysteries. No surprises.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          ========================================
+          JOURNEY TIMELINE (Section 3.4)
+          ========================================
+          - Vertical timeline with alternating left/right cards (desktop)
+          - Single column on mobile
+          - Gradient line connecting milestones
+          - Current step (Internship): pulsing animation
+        -->
+        <section id="journey" class="journey-section" aria-labelledby="journey-heading">
+            <div class="container">
+                <h2 id="journey-heading" class="section-title">My Path to Helping Businesses Like Yours</h2>
+
+                <ol class="journey-timeline" role="list">
+
+                    <div class="timeline-track" aria-hidden="true"></div>
+
+                    <!-- Milestone 1: School -->
+                    <li class="journey-item" role="listitem">
+                        <div class="journey-node" aria-hidden="true"></div>
+                        <article class="journey-card">
+                            <span class="journey-period">Foundation</span>
+                            <h3 class="journey-title">School — Mathur, Thanjavur</h3>
+                            <p class="journey-body">Built the foundation of curiosity and problem-solving. Learned that
+                                great things come from consistent effort — whether it's academics or growing a business.
+                            </p>
+                        </article>
+                    </li>
+
+                    <!-- Milestone 2: B.Sc. -->
+                    <li class="journey-item" role="listitem">
+                        <div class="journey-node" aria-hidden="true"></div>
+                        <article class="journey-card">
+                            <span class="journey-period">Education</span>
+                            <h3 class="journey-title">B.Sc. Computer Science — Bishop Heber College, Trichy</h3>
+                            <p class="journey-body">Mastered the fundamentals: algorithms, data structures, software
+                                architecture. But I knew theory alone wasn't enough — I needed to apply these skills to
+                                real business challenges.</p>
+                        </article>
+                    </li>
+
+                    <!-- Milestone 3: Certifications -->
+                    <li class="journey-item" role="listitem">
+                        <div class="journey-node" aria-hidden="true"></div>
+                        <article class="journey-card">
+                            <span class="journey-period">Certification</span>
+                            <h3 class="journey-title">Professional Certifications — 8 Months Intensive</h3>
+                            <p class="journey-body">Transformed theory into practical capability. HTML5, CSS3,
+                                JavaScript, responsive design, UI/UX principles. Every course was chosen to help me
+                                build better websites for real businesses.</p>
+                        </article>
+                    </li>
+
+                    <!-- Milestone 4: Personal Projects -->
+                    <li class="journey-item" role="listitem">
+                        <div class="journey-node" aria-hidden="true"></div>
+                        <article class="journey-card">
+                            <span class="journey-period">Practice</span>
+                            <h3 class="journey-title">Personal Projects — Self-Driven Learning</h3>
+                            <p class="journey-body">Experimented with design patterns, animation techniques, and
+                                responsive strategies. Every practice project taught me something new about what works
+                                (and what doesn't) for actual users.</p>
+                        </article>
+                    </li>
+
+                    <!-- Milestone 5: Internship (Current - Pulsing) -->
+                    <li class="journey-item journey-item--current" role="listitem">
+                        <div class="journey-node journey-node--current" aria-hidden="true">
+                            <span class="node-pulse" aria-hidden="true"></span>
+                        </div>
+                        <article class="journey-card">
+                            <span class="journey-period journey-period--current">Current</span>
+                            <h3 class="journey-title">Internship at TYM Agency — March 2026</h3>
+                            <p class="journey-body">The turning point. Working with real clients, real deadlines, and
+                                real business goals. I learned that the best developers aren't just technically skilled
+                                — they understand business.</p>
+                        </article>
+                    </li>
+
+                    <!-- Milestone 6: Real Client Projects -->
+                    <li class="journey-item" role="listitem">
+                        <div class="journey-node" aria-hidden="true"></div>
+                        <article class="journey-card">
+                            <span class="journey-period">Present</span>
+                            <h3 class="journey-title">Real Client Projects — Delivering Results</h3>
+                            <p class="journey-body">Delivered 5+ projects for businesses across Tamil Nadu. Each one
+                                taught me something new about different industries, customer behaviors, and how to align
+                                web design with business outcomes.</p>
+                        </article>
+                    </li>
+
+                    <!-- Milestone 7: Future Goal -->
+                    <li class="journey-item" role="listitem">
+                        <div class="journey-node" aria-hidden="true"></div>
+                        <article class="journey-card">
+                            <span class="journey-period">Future</span>
+                            <h3 class="journey-title">Full Stack Developer</h3>
+                            <p class="journey-body">Currently expanding into React, Next.js, and backend technologies.
+                                My goal? To offer even more comprehensive solutions that take your project from concept
+                                to deployment — no gaps, no handoffs.</p>
+                        </article>
+                    </li>
+
+                </ol>
+            </div>
+        </section>
+
+        <!-- 
+          ========================================
+          WHY WORK WITH ME — PARTNERSHIP (Section 3.6)
+          ========================================
+          - Layout: 2×3 grid
+          - Icon + title + description cards
+        -->
+        <section id="partnership" class="partnership-section" aria-labelledby="partnership-heading">
+            <div class="container">
+                <h2 id="partnership-heading" class="section-title">What Working With Me Looks Like</h2>
+
+                <p class="section-intro">
+                    Hiring a web developer shouldn't feel like a black box. Here's what you can expect when we work
+                    together — transparency, collaboration, and results.
+                </p>
+
+                <div class="partnership-grid">
+
+                    <article class="partnership-card">
+                        <div class="partnership-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <circle cx="12" cy="12" r="6" />
+                                <circle cx="12" cy="12" r="2" />
+                            </svg>
+                        </div>
+                        <h3 class="partnership-title">We Start With Your Goals</h3>
+                        <p class="partnership-body">Before any design or code, we talk about your business. What do you
+                            need this website to achieve? More leads? Better credibility? Easier booking? Your goals
+                            become the project's North Star.</p>
+                    </article>
+
+                    <article class="partnership-card">
+                        <div class="partnership-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" />
+                                <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" />
+                            </svg>
+                        </div>
+                        <h3 class="partnership-title">You Get Regular Updates</h3>
+                        <p class="partnership-body">No disappearing developers. I share progress regularly — what's
+                            done, what's next, and any decisions that need your input. You're never in the dark about
+                            your own project.</p>
+                    </article>
+
+                    <article class="partnership-card">
+                        <div class="partnership-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                                <line x1="12" y1="17" x2="12.01" y2="17" />
+                            </svg>
+                        </div>
+                        <h3 class="partnership-title">I Ask Questions Before Making Assumptions</h3>
+                        <p class="partnership-body">I don't guess what your customers want. I ask. I research. I test.
+                            Because a website built on assumptions is a website that misses its mark.</p>
+                    </article>
+
+                    <article class="partnership-card">
+                        <div class="partnership-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <h3 class="partnership-title">I Deliver on Deadline</h3>
+                        <p class="partnership-body">Your time is valuable. I plan meticulously, communicate early about
+                            potential delays, and never promise what I can't deliver. Reliability isn't a feature — it's
+                            the baseline.</p>
+                    </article>
+
+                    <article class="partnership-card">
+                        <div class="partnership-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                                <polyline points="14 2 14 8 20 8" />
+                                <line x1="16" y1="13" x2="8" y2="13" />
+                                <line x1="16" y1="17" x2="8" y2="17" />
+                                <polyline points="10 9 9 9 8 9" />
+                            </svg>
+                        </div>
+                        <h3 class="partnership-title">I Hand Over Clean, Documented Work</h3>
+                        <p class="partnership-body">When the project is done, you get more than a website. You get clear
+                            documentation, training (if needed), and a codebase that's easy to understand and maintain.
+                            No vendor lock-in. No mystery code.</p>
+                    </article>
+
+                    <article class="partnership-card">
+                        <div class="partnership-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
+                        </div>
+                        <h3 class="partnership-title">I'm Here After Launch</h3>
+                        <p class="partnership-body">Websites need care. I offer maintenance packages for security
+                            updates, content changes, and performance monitoring. Or I can train your team to handle
+                            basics. Your choice, your control.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 
+      ========================================
+      GLOBAL FOOTER (Reused)
+      ========================================
+    -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">Mackrine Ruth</a>
+                    <p class="footer-tagline">Frontend Developer & UI Designer</p>
+                    <p class="footer-mission">Building websites that grow businesses.</p>
+                </div>
+
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <h3 class="footer-heading">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="work.html">Work</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-contact">
+                    <h3 class="footer-heading">Connect</h3>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="mailto:yovanmackrineruth@gmail.com">
+                                <span aria-hidden="true">📧</span>
+                                yovanmackrineruth@gmail.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="tel:+916381649243">
+                                <span aria-hidden="true">📱</span>
+                                +91 63816 49243
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h3 class="footer-heading">Follow</h3>
+                    <ul class="footer-social-links">
+                        <li>
+                            <a href="https://github.com/macky-2004" target="_blank" rel="noopener noreferrer"
+                                aria-label="GitHub Profile">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://linkedin.com/in/mackrine-ruth-5611002bb" target="_blank"
+                                rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path
+                                        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                    <rect x="2" y="9" width="4" height="12" />
+                                    <circle cx="4" cy="4" r="2" />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copyright">© 2026 Mackrine Ruth. All rights reserved.</p>
+                <div class="footer-language">
+                    <span class="lang-label" aria-hidden="true">🌐</span>
+                    <span class="lang-active">English</span>
+                    <span aria-hidden="true">|</span>
+                    <a href="#" class="lang-link" lang="ta">தமிழ்</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

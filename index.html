@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Business-Focused Web Developer & UI Designer | Thanjavur, Tamil Nadu</title>
+    <meta name="description"
+        content="Need a website that actually grows your business? I build fast, responsive, and conversion-focused websites for small businesses in Tamil Nadu. Let's turn your online presence into your best salesperson.">
+    <meta name="keywords"
+        content="business website developer, web developer for small business, responsive website design, UI designer Thanjavur, hire web developer Tamil Nadu, website that converts visitors, mobile-first web design">
+    <meta name="author" content="Mackrine Ruth">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://mackrineruth.dev/index.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mackrineruth.dev/">
+    <meta property="og:title" content="Need a Website That Grows Your Business? | Mackrine Ruth">
+    <meta property="og:description"
+        content="I help small businesses turn their websites into powerful growth engines. Fast, beautiful, and built to convert.">
+    <meta property="og:image" content="assets/images/mackrine.png">
+    <meta property="og:locale" content="en_IN">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://mackrineruth.dev/">
+    <meta property="twitter:title" content="Need a Website That Grows Your Business? | Mackrine Ruth">
+    <meta property="twitter:description"
+        content="I help small businesses turn their websites into powerful growth engines. Fast, beautiful, and built to convert.">
+    <meta property="twitter:image" content="assets/images/mackrine.png">
+
+    <!-- Preconnect to Google Fonts for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Skip to main content link for screen readers and keyboard navigation -->
+    <a href="#main" class="skip-link">Skip to main content</a>
+
+    <!-- 
+      ========================================
+      GLOBAL HEADER / NAVIGATION
+      ========================================
+      - Fixed position, sticky on scroll
+      - Glassmorphism effect on scroll (backdrop-filter)
+      - Mobile-first: hamburger menu on < 992px
+      - Desktop: horizontal nav links with active state
+      - Accessible: ARIA labels, roles, keyboard support
+    -->
+    <header class="site-header" role="banner">
+        <div class="container nav-container">
+            <nav class="main-nav" role="navigation" aria-label="Main navigation">
+
+                <!-- Brand / Logo -->
+                <a href="index.html" class="nav-brand" aria-label="Mackrine Ruth - Home">
+                    Mackrine Ruth
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <ul class="nav-menu" role="menubar">
+                    <li role="none">
+                        <a href="index.html" class="nav-link active" aria-current="page" role="menuitem">Home</a>
+                    </li>
+                    <li role="none">
+                        <a href="about.html" class="nav-link" role="menuitem">About</a>
+                    </li>
+                    <li role="none">
+                        <a href="work.html" class="nav-link" role="menuitem">Work</a>
+                    </li>
+                    <li role="none">
+                        <a href="skills.html" class="nav-link" role="menuitem">Skills</a>
+                    </li>
+                    <li role="none">
+                        <a href="contact.html" class="nav-link" role="menuitem">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Mobile Hamburger Toggle -->
+                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false"
+                    aria-controls="mobile-drawer" type="button">
+                    <span class="hamburger-bar" aria-hidden="true"></span>
+                    <span class="hamburger-bar" aria-hidden="true"></span>
+                    <span class="hamburger-bar" aria-hidden="true"></span>
+                </button>
+            </nav>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div class="mobile-drawer" id="mobile-drawer" role="dialog" aria-label="Mobile navigation" aria-modal="true"
+            aria-hidden="true">
+            <div class="drawer-overlay" aria-hidden="true"></div>
+            <div class="drawer-content">
+                <div class="drawer-header">
+                    <span class="drawer-brand">Mackrine Ruth</span>
+                    <button class="drawer-close" aria-label="Close navigation menu" type="button">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <ul class="drawer-menu" role="menu">
+                    <li role="none">
+                        <a href="index.html" class="drawer-link active" aria-current="page" role="menuitem">Home</a>
+                    </li>
+                    <li role="none">
+                        <a href="about.html" class="drawer-link" role="menuitem">About</a>
+                    </li>
+                    <li role="none">
+                        <a href="work.html" class="drawer-link" role="menuitem">Work</a>
+                    </li>
+                    <li role="none">
+                        <a href="skills.html" class="drawer-link" role="menuitem">Skills</a>
+                    </li>
+                    <li role="none">
+                        <a href="contact.html" class="drawer-link" role="menuitem">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="drawer-footer">
+                    <p class="drawer-contact">
+                        <a href="mailto:yovanmackrineruth@gmail.com">yovanmackrineruth@gmail.com</a>
+                    </p>
+                    <p class="drawer-contact">
+                        <a href="tel:+916381649243">+91 63816 49243</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="main">
+
+        <!-- 
+          ========================================
+          HERO SECTION (Home Page)
+          ========================================
+          - Full viewport height (100vh / 100dvh)
+          - Animated CSS-only gradient mesh background
+          - Two-column layout: 60% text | 40% image (desktop)
+          - Typing animation cycling through business benefits
+          - Profile image with gradient border ring
+          - Decorative floating geometric shapes
+        -->
+        <section class="hero" aria-label="Hero section">
+
+            <!-- Animated Gradient Mesh Background (CSS-only, 4 soft shapes) -->
+            <div class="hero-bg" aria-hidden="true">
+                <div class="gradient-shape shape-1"></div>
+                <div class="gradient-shape shape-2"></div>
+                <div class="gradient-shape shape-3"></div>
+                <div class="gradient-shape shape-4"></div>
+            </div>
+
+            <div class="container hero-container">
+
+                <!-- Left Column: Text Content -->
+                <div class="hero-content">
+                    <div class="hero-pretitle">Frontend Developer &amp; UI Designer</div>
+                    <h1 class="hero-title">
+                        Your Website Should Work <br>
+                        <span class="text-gradient">As Hard As You Do.</span>
+                    </h1>
+
+                    <p class="hero-static-text">I help businesses like yours...</p>
+                    <p class="hero-typing-wrapper">
+                        <span id="typing-text" class="typing-text"></span>
+                        <span class="typing-cursor" aria-hidden="true">|</span>
+                    </p>
+
+                    <p class="hero-description">
+                        Most small business websites are slow, outdated, and fail to convert visitors into customers.
+                        I build fast, responsive, and visually engaging websites that turn your online presence into
+                        your most reliable growth engine.
+                    </p>
+
+                    <div class="hero-cta-group">
+                        <a href="work.html" class="btn btn-primary">
+                            See How I Help Businesses Grow
+                            <span aria-hidden="true">→</span>
+                        </a>
+                        <a href="contact.html" class="btn btn-secondary">
+                            Let's Discuss Your Project
+                        </a>
+                    </div>
+
+                    <p class="hero-trust-badge">
+                        <span class="badge-icon" aria-hidden="true">✓</span>
+                        <span>Frontend Developer & UI Designer</span>
+                    </p>
+                </div>
+
+                <!-- Right Column: Profile Image -->
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-container">
+                        <!-- Decorative floating geometric shapes -->
+                        <div class="deco-shape deco-1" aria-hidden="true"></div>
+                        <div class="deco-shape deco-2" aria-hidden="true"></div>
+                        <div class="deco-shape deco-3" aria-hidden="true"></div>
+
+                        <!-- Profile image with animated gradient border -->
+                        <div class="profile-frame">
+                            <img src="assets/images/mackrine.png"
+                                alt="Mackrine Ruth - Frontend Developer and UI Designer based in Thanjavur, Tamil Nadu"
+                                class="profile-image" width="400" height="400" loading="eager">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <a href="#problems" class="scroll-indicator" aria-label="Scroll to explore">
+                <span class="scroll-text">See the problems I solve</span>
+                <span class="scroll-arrow" aria-hidden="true">↓</span>
+            </a>
+        </section>
+
+        <!-- 
+          ========================================
+          PROBLEMS SECTION (2.3)
+          ========================================
+          - Background: var(--color-bg) #F8FAFC
+          - Layout: 3×2 grid desktop, 2-col tablet, 1-col mobile
+          - Cards: White surface, top gradient accent, icon, problem statement
+          - Hover: lift, shadow deepen, gradient border reveal
+        -->
+        <section id="problems" class="problems-section" aria-labelledby="problems-heading">
+            <div class="container">
+
+                <h2 id="problems-heading" class="section-title">
+                    Does Any of This Sound Familiar?
+                </h2>
+
+                <div class="problems-grid">
+
+                    <!-- Problem Card 1: Slow -->
+                    <article class="problem-card">
+                        <div class="problem-accent" aria-hidden="true"></div>
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <h3 class="problem-title">"Our website takes forever to load."</h3>
+                        <p class="problem-body">
+                            You know it. Your customers feel it. Slow websites kill conversions — 53% of mobile users
+                            abandon a site that takes more than 3 seconds. Google also penalizes slow sites in search
+                            rankings. If your competitors' sites load faster, they're winning your customers while
+                            you're still loading.
+                        </p>
+                    </article>
+
+                    <!-- Problem Card 2: Mobile -->
+                    <article class="problem-card">
+                        <div class="problem-accent" aria-hidden="true"></div>
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                                <line x1="12" y1="18" x2="12.01" y2="18" />
+                                <line x1="9" y1="6" x2="15" y2="6" />
+                                <line x1="9" y1="10" x2="15" y2="10" />
+                            </svg>
+                        </div>
+                        <h3 class="problem-title">"Our site looks terrible on phones."</h3>
+                        <p class="problem-body">
+                            Over 60% of your customers are browsing on mobile. If your website isn't designed for
+                            thumb-scrolling, pinch-zooming, and small screens, you're losing more than half your
+                            potential business. A mobile-unfriendly site doesn't just look bad — it tells customers you
+                            don't care about their experience.
+                        </p>
+                    </article>
+
+                    <!-- Problem Card 3: Not on Google -->
+                    <article class="problem-card">
+                        <div class="problem-accent" aria-hidden="true"></div>
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                                <line x1="8" y1="8" x2="14" y2="14" />
+                                <line x1="14" y1="8" x2="8" y2="14" />
+                            </svg>
+                        </div>
+                        <h3 class="problem-title">"We don't show up on Google."</h3>
+                        <p class="problem-body">
+                            You built a website, but it's invisible. Without proper SEO structure, semantic markup, and
+                            performance optimization, search engines can't understand — or rank — your site. Being on
+                            page 2 of Google is like being invisible. Your customers are searching, but they're finding
+                            your competitors instead.
+                        </p>
+                    </article>
+
+                    <!-- Problem Card 4: No Conversion -->
+                    <article class="problem-card">
+                        <div class="problem-accent" aria-hidden="true"></div>
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                                <circle cx="12" cy="7" r="4" />
+                                <path d="M12 11v4" />
+                                <path d="M12 15h.01" />
+                            </svg>
+                        </div>
+                        <h3 class="problem-title">"People visit but don't call or buy."</h3>
+                        <p class="problem-body">
+                            Traffic without conversion is just vanity. If visitors can't figure out what to do next — or
+                            if your contact form is buried three clicks deep — they'll leave and never return. Your
+                            website should guide visitors naturally toward the next step: calling you, booking a
+                            service, or making a purchase.
+                        </p>
+                    </article>
+
+                    <!-- Problem Card 5: Outdated -->
+                    <article class="problem-card">
+                        <div class="problem-accent" aria-hidden="true"></div>
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                                <line x1="8" y1="21" x2="16" y2="21" />
+                                <line x1="12" y1="17" x2="12" y2="21" />
+                                <path d="M6 8h.01" />
+                                <path d="M10 8h.01" />
+                                <path d="M14 8h.01" />
+                                <path d="M18 8h.01" />
+                            </svg>
+                        </div>
+                        <h3 class="problem-title">"Our site looks like it's from 2015."</h3>
+                        <p class="problem-body">
+                            First impressions matter. An outdated website makes your business look unprofessional,
+                            untrustworthy, or even closed. In a world where customers judge credibility in 0.05 seconds,
+                            your design is your handshake. Your website should reflect the quality of your work — not
+                            undermine it.
+                        </p>
+                    </article>
+
+                    <!-- Problem Card 6: Can't Update -->
+                    <article class="problem-card">
+                        <div class="problem-accent" aria-hidden="true"></div>
+                        <div class="problem-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                <circle cx="12" cy="16" r="1" />
+                                <path d="M8 7l2-2" />
+                                <path d="M16 7l-2-2" />
+                            </svg>
+                        </div>
+                        <h3 class="problem-title">"We need a developer for every small change."</h3>
+                        <p class="problem-body">
+                            Every text update, every new photo, every price change requires calling a developer and
+                            waiting days (and paying more). Your website should empower you, not make you dependent. I
+                            build sites that are easy to maintain — or I document everything so clearly that you can
+                            make updates confidently.
+                        </p>
+                    </article>
+
+                </div>
+
+                <!-- Section Transition -->
+                <div class="problems-transition">
+                    <p class="transition-text">
+                        If even one of these resonated with you, you're not alone. These are the most common challenges
+                        I help businesses overcome every day.
+                    </p>
+                    <a href="#solutions" class="link-arrow">
+                        Here's how I solve them
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 
+          ========================================
+          SOLUTIONS SECTION (Section 2.4)
+          ========================================
+          - Background: #FFFFFF (var(--color-surface))
+          - Layout: Vertical timeline, alternating left/right (desktop)
+          - Central gradient line with gradient circle nodes
+          - Cards with left border accent
+        -->
+        <section id="solutions" class="solutions-section" aria-labelledby="solutions-heading">
+            <div class="container">
+
+                <h2 id="solutions-heading" class="section-title">
+                    How I Turn Your Website Into a Growth Engine
+                </h2>
+
+                <p class="section-intro">
+                    I don't just &quot;build websites.&quot; I solve business problems through thoughtful design and
+                    clean development.
+                    Every project starts with one question: What does your business need to achieve? Then I build the
+                    solution.
+                </p>
+
+                <ol class="solutions-timeline" role="list">
+
+                    <!-- Decorative vertical connecting line -->
+                    <div class="timeline-line" aria-hidden="true"></div>
+
+                    <!-- Step 1 -->
+                    <li class="timeline-item" role="listitem">
+                        <div class="timeline-node" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                            </svg>
+                        </div>
+                        <article class="timeline-card">
+                            <span class="card-step">Step 1</span>
+                            <h3 class="card-title">Discovery &amp; Strategy</h3>
+                            <p class="card-body">
+                                Before writing a single line of code, I learn about your business: Your customers. Your
+                                competitors. Your goals. Your pain points. Because a website that doesn't understand
+                                your business is just digital decoration.
+                            </p>
+                            <p class="card-result">Result: A clear roadmap aligned with your actual objectives.</p>
+                        </article>
+                    </li>
+
+                    <!-- Step 2 -->
+                    <li class="timeline-item" role="listitem">
+                        <div class="timeline-node" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <article class="timeline-card">
+                            <span class="card-step">Step 2</span>
+                            <h3 class="card-title">User-Centered Design</h3>
+                            <p class="card-body">
+                                I design for the people who actually use your site — your customers. Intuitive
+                                navigation. Clear visual hierarchy. Strategic call-to-action placement. Every element
+                                guides visitors toward becoming customers.
+                            </p>
+                            <p class="card-result">Result: A website that feels effortless to use and naturally converts
+                                visitors into leads.</p>
+                        </article>
+                    </li>
+
+                    <!-- Step 3 -->
+                    <li class="timeline-item" role="listitem">
+                        <div class="timeline-node" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                        </div>
+                        <article class="timeline-card">
+                            <span class="card-step">Step 3</span>
+                            <h3 class="card-title">Lightning-Fast Development</h3>
+                            <p class="card-body">
+                                I write clean, semantic HTML, modern CSS, and efficient JavaScript. No bloated
+                                frameworks. No unnecessary plugins. Just optimized code that loads in under 2 seconds
+                                and ranks well on Google.
+                            </p>
+                            <p class="card-result">Result: A fast, secure, low-maintenance website that search engines
+                                love and users enjoy.</p>
+                        </article>
+                    </li>
+
+                    <!-- Step 4 -->
+                    <li class="timeline-item" role="listitem">
+                        <div class="timeline-node" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="5" y="2" width="14" height="20" rx="2" ry="2" />
+                                <line x1="12" y1="18" x2="12.01" y2="18" />
+                            </svg>
+                        </div>
+                        <article class="timeline-card">
+                            <span class="card-step">Step 4</span>
+                            <h3 class="card-title">Mobile-First Approach</h3>
+                            <p class="card-body">
+                                I design for mobile users first, then enhance for desktop. Thumb-friendly navigation.
+                                Readable text without zooming. Fast loading on 3G networks. Because your next customer
+                                is probably browsing on their phone right now.
+                            </p>
+                            <p class="card-result">Result: A seamless experience across all devices — no frustrated
+                                pinch-zooming, no broken layouts.</p>
+                        </article>
+                    </li>
+
+                    <!-- Step 5 -->
+                    <li class="timeline-item" role="listitem">
+                        <div class="timeline-node" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                                <path
+                                    d="M12 15l-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
+                                <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
+                                <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+                            </svg>
+                        </div>
+                        <article class="timeline-card">
+                            <span class="card-step">Step 5</span>
+                            <h3 class="card-title">Deployment &amp; Handover</h3>
+                            <p class="card-body">
+                                I deploy your site to fast, reliable hosting and provide clear documentation. Need
+                                future updates? I make the process simple — or train your team to handle basic changes
+                                independently.
+                            </p>
+                            <p class="card-result">Result: A website that's live, performing, and easy to maintain.</p>
+                        </article>
+                    </li>
+
+                </ol>
+
+                <div class="section-cta">
+                    <a href="work.html" class="btn btn-primary">
+                        See Real Results
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 
+          ========================================
+          FEATURED PROJECTS SECTION (Section 2.5)
+          ========================================
+          - Background: var(--color-bg) #F8FAFC
+          - Layout: 3-column grid desktop, 2-col tablet, 1-col mobile
+          - Cards: 16:9 image, hover overlay, category pill, tags
+        -->
+        <section id="projects" class="projects-section" aria-labelledby="projects-heading">
+            <div class="container">
+
+                <h2 id="projects-heading" class="section-title">Real Businesses. Real Results.</h2>
+
+                <p class="section-intro">
+                    These aren't just pretty websites. Each one solved a specific business problem — from generating
+                    leads to building credibility to simplifying customer inquiries.
+                </p>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1: AVIKA Boutique -->
+                    <article class="project-card">
+                        <a href="work.html#avika" class="project-image-link"
+                            aria-label="View AVIKA Boutique case study">
+                            <div class="project-image-wrapper">
+                                <img src="assets/images/boutique-home.png"
+                                    alt="AVIKA Boutique website preview showcasing luxury fashion collections with elegant responsive design"
+                                    class="project-image" width="800" height="450" loading="lazy">
+                                <div class="project-overlay">
+                                    <span class="overlay-text">View Case Study</span>
+                                    <span class="overlay-arrow" aria-hidden="true">→</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Business Website</span>
+                            </div>
+                            <h3 class="project-title">AVIKA Boutique</h3>
+                            <p class="project-description">
+                                A luxury boutique with a stunning physical store but zero online visibility. I built a
+                                premium, fast-loading website that showcases their fashion collections with responsive
+                                navigation, scroll animations, and a testimonial carousel that builds trust.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <a href="work.html#avika" class="project-link">
+                                View Case Study
+                                <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: Madhavi Mehandi -->
+                    <article class="project-card">
+                        <a href="work.html#madhavi" class="project-image-link"
+                            aria-label="View Madhavi Mehandi case study">
+                            <div class="project-image-wrapper">
+                                <img src="assets/images/mehendi-home.png"
+                                    alt="Madhavi Mehandi portfolio website displaying intricate bridal mehendi designs with interactive gallery"
+                                    class="project-image" width="800" height="450" loading="lazy">
+                                <div class="project-overlay">
+                                    <span class="overlay-text">View Case Study</span>
+                                    <span class="overlay-arrow" aria-hidden="true">→</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Portfolio</span>
+                            </div>
+                            <h3 class="project-title">Madhavi Mehandi</h3>
+                            <p class="project-description">
+                                A talented mehendi artist invisible to potential clients. I created a stunning portfolio
+                                with an auto-playing hero video, interactive gallery with category filters, and a custom
+                                lightbox for immersive design viewing — all built with zero external libraries.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <a href="work.html#madhavi" class="project-link">
+                                View Case Study
+                                <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: TYM Jewellery -->
+                    <article class="project-card">
+                        <a href="work.html#tym-jewellery" class="project-image-link"
+                            aria-label="View TYM Jewellery case study">
+                            <div class="project-image-wrapper">
+                                <img src="assets/images/jewel-home.png"
+                                    alt="TYM Jewellery website showing organized gold jewellery collections with WhatsApp inquiry integration"
+                                    class="project-image" width="800" height="450" loading="lazy">
+                                <div class="project-overlay">
+                                    <span class="overlay-text">View Case Study</span>
+                                    <span class="overlay-arrow" aria-hidden="true">→</span>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="project-content">
+                            <div class="project-meta">
+                                <span class="project-category">Business Website</span>
+                            </div>
+                            <h3 class="project-title">TYM Jewellery</h3>
+                            <p class="project-description">
+                                14 jewellery categories with no way to browse or inquire online. I built a category
+                                drawer system with WhatsApp integration for instant inquiries, FAQ accordion, and
+                                infinite testimonial slider — optimized for mobile users.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">HTML5</span>
+                                <span class="tag">CSS3</span>
+                                <span class="tag">JavaScript</span>
+                            </div>
+                            <a href="work.html#tym-jewellery" class="project-link">
+                                View Case Study
+                                <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="section-cta">
+                    <a href="work.html" class="btn btn-primary">
+                        See All Projects
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 
+          ========================================
+          WHY WORK WITH ME SECTION (Section 2.6)
+          ========================================
+          - Background: #FFFFFF (var(--color-surface))
+          - Layout: 3×2 grid desktop, 2-col tablet, 1-col mobile
+          - Cards: Gradient circle icon (48px), title, description
+        -->
+        <section id="differentiators" class="differentiators-section" aria-labelledby="differentiators-heading">
+            <div class="container">
+
+                <h2 id="differentiators-heading" class="section-title">Why Businesses Choose to Work With Me</h2>
+
+                <p class="section-intro">
+                    You have options when hiring a web developer. Here's what makes our collaboration different — and
+                    why my clients keep coming back.
+                </p>
+
+                <div class="differentiators-grid">
+
+                    <!-- Card 1: Business Mindset -->
+                    <article class="diff-card">
+                        <div class="diff-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 20V10" />
+                                <path d="M12 20V4" />
+                                <path d="M6 20v-6" />
+                                <path d="M3 20h18" />
+                            </svg>
+                        </div>
+                        <h3 class="diff-title">I Think Like a Business Owner, Not Just a Coder</h3>
+                        <p class="diff-body">
+                            Every decision I make — from color choice to button placement — is filtered through one
+                            lens: "Will this help your business grow?" I don't build features for the sake of features.
+                            I build solutions that drive leads, sales, and credibility. Your success is my metric.
+                        </p>
+                    </article>
+
+                    <!-- Card 2: Fast & Optimized -->
+                    <article class="diff-card">
+                        <div class="diff-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2v4" />
+                                <path d="m5 5 2.8 2.8" />
+                                <path d="m19 5-2.8 2.8" />
+                                <circle cx="12" cy="14" r="8" />
+                                <path d="M12 10v4" />
+                                <path d="M9 13h6" />
+                            </svg>
+                        </div>
+                        <h3 class="diff-title">I Write Code That Loads Fast and Ranks Well</h3>
+                        <p class="diff-body">
+                            I use vanilla HTML, CSS, and JavaScript — no bloated frameworks, no unnecessary
+                            dependencies. The result? Websites that load in under 2 seconds, score high on Google
+                            PageSpeed, and rank better in search results. Fast sites = happy users = better conversions
+                            = more business for you.
+                        </p>
+                    </article>
+
+                    <!-- Card 3: People-First Design -->
+                    <article class="diff-card">
+                        <div class="diff-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <h3 class="diff-title">I Design for Real People, Not Just Screens</h3>
+                        <p class="diff-body">
+                            Your customers aren't tech experts. They're busy people browsing on their phones during
+                            lunch breaks. I design for them — intuitive navigation, clear messaging, obvious next steps.
+                            No confusion. No friction. Just smooth paths from "interested" to "customer."
+                        </p>
+                    </article>
+
+                    <!-- Card 4: On-Time Delivery -->
+                    <article class="diff-card">
+                        <div class="diff-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+                                <line x1="16" y1="2" x2="16" y2="6" />
+                                <line x1="8" y1="2" x2="8" y2="6" />
+                                <line x1="3" y1="10" x2="21" y2="10" />
+                                <path d="m9 16 2 2 4-4" />
+                            </svg>
+                        </div>
+                        <h3 class="diff-title">I Deliver on Time, Every Time</h3>
+                        <p class="diff-body">
+                            I respect your time and your deadlines. Through clear planning, regular updates, and
+                            transparent communication, I ensure projects stay on track — without surprises or
+                            last-minute scrambles.
+                        </p>
+                    </article>
+
+                    <!-- Card 5: Easy to Reach -->
+                    <article class="diff-card">
+                        <div class="diff-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                            </svg>
+                        </div>
+                        <h3 class="diff-title">I'm Easy to Reach and Quick to Respond</h3>
+                        <p class="diff-body">
+                            Based in Thanjavur, working with clients across Tamil Nadu. WhatsApp, email, phone — I
+                            respond within hours, not days. Because your questions shouldn't wait.
+                        </p>
+                    </article>
+
+                    <!-- Card 6: Easy to Maintain -->
+                    <article class="diff-card">
+                        <div class="diff-icon" aria-hidden="true">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
+                            </svg>
+                        </div>
+                        <h3 class="diff-title">I Build Sites That Are Easy to Maintain</h3>
+                        <p class="diff-body">
+                            No complex CMS configurations. No mysterious plugin dependencies. I build clean, documented
+                            code that you (or your team) can update with confidence. Or I handle updates for you — your
+                            choice.
+                        </p>
+                    </article>
+
+                </div>
+
+                <div class="section-cta">
+                    <a href="contact.html" class="btn btn-primary">
+                        Let's Discuss Your Business
+                        <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 
+          ========================================
+          TESTIMONIAL / TRUST SECTION (Section 2.7)
+          ========================================
+          - Background: var(--color-dark) #0F172A
+          - Layout: Centered, max-width 800px
+          - Large gradient quote marks, Playfair Display italic quote
+        -->
+        <section id="testimonials" class="testimonial-section reveal" aria-labelledby="testimonials-heading">
+            <div class="container">
+
+                <h2 id="testimonials-heading" class="section-title section-title--light">What My Clients Say</h2>
+
+                <figure class="testimonial-card">
+                    <span class="quote-marks" aria-hidden="true">“</span>
+
+                    <blockquote>
+                        <p class="testimonial-quote">
+                            I don't measure success by how pretty a website looks. I measure it by how much it helps
+                            your business grow. Every project is a partnership — your goals become my goals, and I won't
+                            stop until we achieve them together.
+                        </p>
+                    </blockquote>
+
+                    <figcaption class="testimonial-attribution">
+                        <span class="attribution-line" aria-hidden="true"></span>
+                        <cite>Mackrine Ruth</cite>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+        <!-- 
+          ========================================
+          FINAL CTA SECTION (Section 2.8)
+          ========================================
+          - Background: Gradient (Indigo → Cyan)
+          - Layout: Centered, 120px vertical padding
+          - White text + white primary button + transparent secondary button
+        -->
+        <section id="final-cta" class="final-cta-section" aria-labelledby="final-cta-heading">
+            <div class="container">
+                <div class="final-cta-content">
+
+                    <h2 id="final-cta-heading" class="final-cta-title">
+                        Ready to Turn Your Website Into Your Best Salesperson?
+                    </h2>
+
+                    <p class="final-cta-body">
+                        Your competitors are already online. Your customers are already searching. The only question is:
+                        Will they find you — or someone else?
+                    </p>
+
+                    <p class="final-cta-body">
+                        Let's build a website that works as hard as you do. One that attracts customers, builds trust,
+                        and grows your business while you focus on what you do best.
+                    </p>
+
+                    <div class="final-cta-actions">
+                        <a href="contact.html" class="btn btn-light">
+                            Start Your Project
+                            <span aria-hidden="true">→</span>
+                        </a>
+                        <a href="work.html" class="btn btn-ghost">
+                            View More Work
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+          ========================================
+          GLOBAL FOOTER (Section 2.9)
+          ========================================
+          - Background: var(--color-dark) #0F172A
+          - Layout: 4-column desktop, 2-col tablet, 1-col mobile
+          - Semantic <footer> with contentinfo role
+        -->
+        <footer class="site-footer" role="contentinfo">
+            <div class="container">
+                <div class="footer-grid">
+
+                    <!-- Brand Column -->
+                    <div class="footer-brand">
+                        <a href="index.html" class="footer-logo">Mackrine Ruth</a>
+                        <p class="footer-tagline">Frontend Developer & UI Designer</p>
+                        <p class="footer-mission">Building websites that grow businesses.</p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <nav class="footer-nav" aria-label="Footer navigation">
+                        <h3 class="footer-heading">Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="work.html">Work</a></li>
+                            <li><a href="skills.html">Skills</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Contact Info -->
+                    <div class="footer-contact">
+                        <h3 class="footer-heading">Connect</h3>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="mailto:yovanmackrineruth@gmail.com">
+                                    <span aria-hidden="true">📧</span>
+                                    yovanmackrineruth@gmail.com
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tel:+916381649243">
+                                    <span aria-hidden="true">📱</span>
+                                    +91 63816 49243
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="footer-social">
+                        <h3 class="footer-heading">Follow</h3>
+                        <ul class="footer-social-links">
+                            <li>
+                                <a href="https://github.com/macky-2004" target="_blank" rel="noopener noreferrer"
+                                    aria-label="GitHub Profile">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com/in/mackrine-ruth-5611002bb" target="_blank"
+                                    rel="noopener noreferrer" aria-label="LinkedIn Profile">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                        <rect x="2" y="9" width="4" height="12" />
+                                        <circle cx="4" cy="4" r="2" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <!-- Footer Bottom Bar -->
+                <div class="footer-bottom">
+                    <p class="footer-copyright">© 2026 Mackrine Ruth. All rights reserved.</p>
+                    <div class="footer-language">
+                        <span class="lang-label" aria-hidden="true">🌐</span>
+                        <span class="lang-active">English</span>
+                        <span aria-hidden="true">|</span>
+                        <a href="#" class="lang-link" lang="ta">தமிழ்</a>
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+
+    <!-- JSON-LD Schema Markup for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mackrine Ruth",
+      "jobTitle": "Frontend Developer & UI Designer",
+      "description": "I help small businesses turn their websites into powerful growth engines through fast, responsive, and conversion-focused web design.",
+      "url": "https://mackrineruth.dev",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Mathur, Thanjavur",
+        "addressRegion": "Tamil Nadu",
+        "addressCountry": "IN"
+      },
+      "email": "yovanmackrineruth@gmail.com",
+      "telephone": "+916381649243",
+      "sameAs": [
+        "https://github.com/macky-2004",
+        "https://linkedin.com/in/mackrine-ruth-5611002bb"
+      ],
+      "knowsAbout": [
+        "Web Development",
+        "UI Design",
+        "Responsive Design",
+        "Small Business Websites",
+        "Frontend Development"
+      ],
+      "offers": {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Business Website Development",
+          "description": "Fast, responsive, and conversion-focused websites for small businesses"
+        }
+      }
+    }
+    </script>
+</body>
+
+</html>
