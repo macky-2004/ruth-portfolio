@@ -275,13 +275,13 @@ function initScrollReveal() {
         '.problem-card, .timeline-card, .project-card, .diff-card, ' +
         '.skill-card, .progress-card, .soft-skill-card, .contact-method-card, ' +
         '.info-card, .resume-card, .faq-item, .section-title, .partnership-card, .story-grid, ' +
-        '.inquiry-card-wrapper, .reveal-hidden'
+        '.inquiry-card-wrapper, .reveal-hidden, .reveal, .testimonial-section, .testimonial-card'
     );
 
     const observerOptions = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.12 // Trigger reveal when 12% visible
+        threshold: 0.02 // Trigger reveal as soon as it is visible (2%)
     };
 
     const observer = new IntersectionObserver((entries, obs) => {
